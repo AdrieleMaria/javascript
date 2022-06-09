@@ -21,24 +21,33 @@
         <div class="banner">
             <h1>Javascript02 Questão C</h1>
         </div>
+
+        <nav>
+          <ul>
+            <li><a href="index.html"> Letra A </a></li>
+            <li><a href="letraB.html"> Letra B </a></li>
+            <li><a href="letraC.html"> Letra C </a></li>
+          </ul>
+        </nav>
     </header>
     <!-- end header -->
 
     <main class="main">
 
         <section type="submit">
+
+            <h3 id="mostraC"> </h3>
             
+            <label>data de nascimento:</label><br/>
             <input type="date" id="nasc"/>
             
             <form >              
-                <label for="">Gênero:</label>
+                <label for="">Gênero:</label><br/>
                 <input type="radio" id="masc" name="genero" value="masculino">
                 <label for="masc">Masculino</label><br>
                 <input type="radio" id="femi" name="genero" value="feminino" >
                 <label for="femi">Feminino</label><br>
             </form>
-            
-            <h3 id="mostraC"> </h3>
 
             <a id="btn" class="btn banner-btn" onclick="main()" >
                 calcular
@@ -76,6 +85,6 @@
     </footer>   
     <!-- end footer --> 
 
-    <script src="index.js"></script>
+    <script src="./controllers/letraC.js"></script>
 </body>
 </html>

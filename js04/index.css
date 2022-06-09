@@ -180,6 +180,42 @@ p{
 
 /*
 =====
+navbar
+=====
+*/
+
+ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--clr-dark);
+  
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: var(--clr-light);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: var(--clr-pink);
+}
+
+
+/*
+=====
 Main
 =====
 */
