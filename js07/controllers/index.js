@@ -26,7 +26,7 @@ addEventListener("change", ()=>{
     let escolha = document.getElementById("escolha").value;
     switch(escolha){
         case "ff":
-            img.src="../assets/images/ferrari-f8.jpg";
+            img.src="./assets/images/ferrari-f8.jpg";
             marca.innerHTML = "Marca: Ferrari";
             potencia.innerHTML = "Potência: 720 HP";
             velocidade.innerHTML = "Velocidade máxima: 340 km/h";
@@ -34,7 +34,7 @@ addEventListener("change", ()=>{
             motor.innerHTML = "Motor: 3,9 | V8";
             break;
         case "p6":
-            img.src="../assets/images/porsche-911.jpg";
+            img.src="./assets/images/porsche-911.jpg";
             marca.innerHTML = "Marca: Porsche";
             potencia.innerHTML = "Potência: 385 - 650 HP";
             velocidade.innerHTML = "Velocidade máxima: 291 - 330 km/h";
@@ -42,7 +42,7 @@ addEventListener("change", ()=>{
             motor.innerHTML = "Motor: 4,0 | 6 cilindros";
             break;
         case "la":
-            img.src="../assets/images/lamborghini-aventador.png";
+            img.src="./assets/images/lamborghini-aventador.png";
             marca.innerHTML = "Marca: Lamborghini ";
             potencia.innerHTML = "Potência: 770 HP";
             velocidade.innerHTML = "Velocidade máxima: 350 - 351 km/h";
