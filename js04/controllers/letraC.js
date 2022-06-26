@@ -7,13 +7,14 @@
  let h = document.getElementById('h');
  //let p = document.getElementById('p');
  
- let numero1 = parseFloat(document.getElementById('num1').value); 
+
  let botaoC = document.getElementById('btn')
  let resultadoMenor;
  let resultadoMaior;
  
  
  botaoC.addEventListener('click', () => {
+    let numero1 = parseFloat(document.getElementById('num1').value); 
 
     console.log(typeof numero1)
 

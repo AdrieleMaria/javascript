@@ -15,4 +15,5 @@ meuBotao.addEventListener('click', () => {
 
     p.innerHTML = contador
     console.log("Olá console")
+    
 })

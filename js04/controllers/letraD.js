@@ -8,9 +8,10 @@
 
  let botaoD = document.getElementById('btn')
 
- resultado = Math.floor(Math.random() * 1000 + 1);
+
  
  botaoD.addEventListener('click', () => {
+    let resultado = Math.floor(Math.random() * 1000 + 1);
 
     if(resultado > 0 && resultado < 87){
         h3.innerHTML = "mulher idosa";

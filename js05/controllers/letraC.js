@@ -8,53 +8,51 @@ Utilize a estrutura ‘switch’ e crie uma página web que contenha um formulá
  * Questão C
  */
 
- let h3 = document.getElementById('h3'); 
- 
- let botaoC = document.getElementById('btn');
-
- let produtos = document.querySelector("#products").value;
 
  
+ let botaoC = document.getElementById('btn'); 
  
  botaoC.addEventListener('click', () => {
+    let h3 = document.getElementById('h3'); 
+    let produtos = document.querySelector("#products").value;
 
-    let resultado;
+    let resultado = document.getElementById("flor");
     console.log(produtos);
 
     switch(produtos){
         case "geranio":
             console.log(resultado);
-            resultado = document.getElementById("ger").src="../assets/image/geranios.jpg";
+            resultado.src="../assets/image/geranios.jpg";
             break;
 
         case "girassol":
             console.log(resultado);
-            resultado = document.getElementById("gir").src="../assets/image/girassois.jpg";
+            resultado.src="../assets/image/girassois.jpg";
             break;
 
         case "lirio":
             console.log(resultado);
-            resultado = document.getElementById("lir").src="../assets/image/lirios.jpg";
+            resultado.src="../assets/image/lirios.jpg";
             break;
 
         case "margarida":
             console.log(resultado);
-            resultado = document.getElementById("mar").src="../assets/image/margaridas.jpg";
+            resultado.src="../assets/image/margaridas.jpg";
             break;
 
         case "orquidea":
             console.log(resultado);
-            resultado = document.getElementById("orq").src="../assets/image/orquideas.jpg";
+            resultado.src="../assets/image/orquideas.jpg";
             break;
 
         case "rosa":
             console.log(resultado);
-            resultado = document.getElementById("ros").src="../assets/image/rosas.jpg";
+            resultado.src="../assets/image/rosas.jpg";
             break;
 
         case "tulipa":
             console.log(resultado);
-            resultado = document.getElementById("tul").src="../assets/image/tulipas.jpg";
+            resultado.src="../assets/image/tulipas.jpg";
             break;
 
         default :

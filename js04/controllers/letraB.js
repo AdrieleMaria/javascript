@@ -7,14 +7,16 @@
  let h3 = document.getElementById('h3');
  //let p = document.getElementById('p');
  
- let numero1 = parseInt(document.getElementById('num1').value);
- let numero2 = parseInt(document.getElementById('num2').value);
+
  
  let botaoB = document.getElementById('btn')
  let resultado;
  
  
  botaoB.addEventListener('click', () => {
+
+    let numero1 = parseInt(document.getElementById('num1').value);
+    let numero2 = parseInt(document.getElementById('num2').value);
 
     if(isNaN(numero1) || isNaN(numero2)){
         console.log("not a number!")

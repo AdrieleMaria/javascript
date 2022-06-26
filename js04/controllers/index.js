@@ -5,14 +5,16 @@
 let h3 = document.getElementById('h3');
 let p = document.getElementById('p');
 
-let numero1 = parseFloat(document.getElementById('num1').value);
-let numero2 = parseFloat(document.getElementById('num2').value);
+
 
 let meuBotao = document.getElementById('btn')
 let resultado;
 
 
 meuBotao.addEventListener('click', () => {
+
+    let numero1 = parseFloat(document.getElementById('num1').value);
+    let numero2 = parseFloat(document.getElementById('num2').value);
 
     if(isNaN(numero1) || isNaN(numero2)){
         console.log("not a number!")
