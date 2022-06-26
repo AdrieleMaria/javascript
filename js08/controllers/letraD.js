@@ -16,22 +16,37 @@ Crie uma página web que possua um formulário com 2 campos, um do tipo textarea
  */
 
 
- let area = document.getElementById("area").value;
- let mostra = document.getElementById("mostra");
-function enviar(){    
-    
-    try{
 
-        JSON.parse(area, (key, value) => {
-            console.log(key); // mostra o nome da propriedade atual, o último é "".
-            return value;     // retorna o valor da propriedade inalterada.
-        });
-    
-        //let obj = (JSON.parse(area));
-       // mostra.textContent = 'Parsable JSON string!';
+
+document.getElementById("btn").addEventListener("click", (event)=>{    
+    event.preventDefault();
+
+    let mostra = document.getElementById("mostra");
+    let area = document.getElementById("area").value;
+
+    if(!isNaN(area)){
+        throw "[Field] 'o texto' não é string"
+    }  
+    try{       
+        let obj = {};
+
+        obj = JSON.parse(area);
+              
+        mostra.textContent = `Parsable JSON string!`;
+       
+        console.log(obj);
        
         //console.log(obj);
     } catch (e) {
         console.log(e.message);
     } 
-}
+})
+
+/**
+ * 
+ * var texto = '{"atributo1": "valor 1", "atributo2": 23}';
+
+    var objeto = JSON.parse(texto);
+
+    console.log(objeto);
+ */
