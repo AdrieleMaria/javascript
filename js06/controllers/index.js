@@ -15,19 +15,19 @@
  */
 
 
-let img = document.getElementById("bomba").src="../assets/image/acesa.png";
+let img = document.getElementById("bomba").src="./assets/image/acesa.png";
 let audio;
 
 let explode = setTimeout(()=>{
     audio = new Audio("../assets/audio/bomb-02.wav");
     audio.play();
-    img = document.getElementById("bomba").src="../assets/image/explosao.png";
+    img = document.getElementById("bomba").src="./assets/image/explosao.png";
     console.log("explodiu");
 },10000);
 
 function desarma(){
     clearTimeout(explode);
-    img = document.getElementById("bomba").src="../assets/image/apagada.png";  
+    img = document.getElementById("bomba").src="./assets/image/apagada.png";  
 }
 
 
