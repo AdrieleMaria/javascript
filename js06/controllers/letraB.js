@@ -14,7 +14,7 @@
  */
 
 
- let img = document.getElementById("bomba").src="../assets/image/acesa.png";
+ let img = document.getElementById("bomba").src="./assets/image/acesa.png";
  let audioBomba = new Audio("../assets/audio/bomb-02.wav");
  let audioTick = document.getElementById("tick");
  let h3 = document.getElementById("contador");
@@ -38,12 +38,12 @@
  let explode = setTimeout(()=>{
      audioBomba.play();
      clearInterval(tempo);
-     img = document.getElementById("bomba").src="../assets/image/explosao.png";
+     img = document.getElementById("bomba").src="./assets/image/explosao.png";
      console.log("explodiu");
  },60000);
  
  function desarma(){
      clearTimeout(explode);
      clearInterval(tempo);
-     img = document.getElementById("bomba").src="../assets/image/apagada.png";  
+     img = document.getElementById("bomba").src="./assets/image/apagada.png";  
  }

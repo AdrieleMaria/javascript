@@ -24,7 +24,7 @@ Utilize a estrutura ‘switch’ e crie uma página web que contenha um formulá
     switch(produtos){
         case "geranio":
             console.log(resultado);
-            resultado = document.getElementById("ger").src="../assets/image/geranios.jpg";
+            resultado = document.getElementById("ger").src="../assets/image/.jpg";
             break;
 
         case "girassol":
