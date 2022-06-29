@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="data:," />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Oswald:wght@700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/font/fontawesome-free-6.1.1-web/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Javascript11</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="banner">
+        <h1>Javascript11</h1>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <main>
+      <section>
+        <form class="form main">
+          <h4>inserir produtos</h4>
+          <input type="text" name="nome-do-produto" id="nome" />
+          <textarea
+            name="descricao-do-produto"
+            id="descricao"
+            cols="30"
+            rows="5"
+          ></textarea>
+          <input type="number" name="valor" id="valor" />
+
+          <a
+            href="#"
+            type="submit"
+            onclick="incluirProdutoAPartirDoFormulario()"
+            id="btn-incluir"
+            class="btn banner-btn"
+            >salvar</a
+          >
+          <a
+            href="#"
+            type="submit"
+            onclick="atualizarProduto()"
+            id="btn-atualizar"
+            class="btn banner-btn atualiza"
+            >atualizar</a
+          >
+
+          <a type="button" onclick="listarTabelaDinamica()">listar</a>
+        </form>
+
+        <article id="lista-produtos" class="main">
+
+          <div class="campoBusca">
+            <input type="text" id="input-busca">
+            <button id="btn-busca" onclick="buscarprodutos()">buscar</button>
+          </div>
+          <table>
+            <thead>
+              <th>id</th>
+              <th>
+                <a type="button" onclick="ordenarAlfabeticamente()">Nome</a>
+              </th>
+              <th>
+                <a type="button" onclick="ordenarPorValorCrescente()">Valor</a>
+              </th>
+              <th>editar</th> 
+              <th>excluir</th>
+            </thead>
+            <tbody class="itens-dinamicos">
+              <!--Inserir itens aqui-->
+            </tbody>
+          </table>
+        </article>
+
+        <!--Recebe itens dinâmicos dentro dos spans -->
+        <div class="main" id="produto-detalhe">
+          <ul>
+            <li>
+              <span class="id" name="id" id="detalhe-id"></span>
+            </li>
+            <li>
+              <span class="nome" name="nome" id="detalhe-nome"></span>
+            </li>
+            <li>
+              <span
+                class="descricao"
+                name="descricao"
+                id="detalhe-descricao"
+              ></span>
+            </li>
+            <li>
+              <span class="valor" name="valor" id="detalhe-valor"></span>
+            </li>
+            <li>
+              <span class="hora" name="hora" id="detalhe-hora"></span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="section-center">
+        <div class="social-icons">
+          <!-- social icon -->
+          <a href="#" class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <!-- end of social icon -->
+          <!-- social icon -->
+          <a href="#" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <!-- end of social icon -->
+          <!-- social icon -->
+          <a href="#" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <!-- end of social icon -->
+        </div>
+        <h4 class="footer-text">
+          &copy;
+          <span class="company">Adriele Santos</span>
+          all rights reserved
+        </h4>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="index.js"></script>
+  </body>
+</html>
